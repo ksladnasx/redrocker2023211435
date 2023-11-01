@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color: greenyellow;">百不了度</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .search-results {
+            margin-top: 20px;
+        }
+
+        .search-results h2 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .search-results p {
+            color: #666;
+        }
+
+        .no-results {
+            color: #2f2867;
+            font-style: italic;
+            h1 input:hover{background-color: aqua;}
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: greenyellow;" >百不了度</h1>
+    <form action="search.php" method="GET">
+        <input type="text" name="query" placeholder="请输入搜索关键词">
+        <input type="submit" value="搜索">
+    </form>
+    <!-- <?php
+        // 检查用户是否提交了搜索表单
+        if(isset($_GET['query'])) {
+            $query = $_GET['query'];
+            
+            // 连接到数据库，执行搜索操作
+            $db = new mysqli('localhost', 'username', 'password', 'database_name');
+            $result = $db->query("SELECT * FROM documents WHERE content LIKE '%{$query}%'");
+            
+            // 输出搜索结果
+            if($result->num_rows > 0) {
+                echo '<div class="search-results">';
+                while($row = $result->fetch_assoc()) {
+                    echo '<h2>'.$row['title'].'</h2>';
+                    echo '<p>'.$row['content'].'</p>';
+                }
+                echo '</div>';
+            } else {
+                echo '<p class="no-results">抱歉，未找到相关结果。</p>';
+            }
+            
+            // 关闭数据库连接
+            $db->close();
+        }
+    ?> -->
+</body>
+</html>

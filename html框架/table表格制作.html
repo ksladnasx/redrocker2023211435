@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <!-- tr表示第几行，tr下的td表示该行多少列,50%表示父元素的50% -->
+    <table border="1" width="120" height="200" bgcolor="red"
+    align="center" bordercolor="blue" cellspacing="1"
+    cellpadding="20">
+        <tr valign="top" bgcolor="yellow">
+            <!-- td如果一个单元格设置了宽度影响一整列宽度 -->
+            <!-- 如果一个单元格设置了高度影响一整列高度 -->
+            <td width="60" rowspan="2" colspan="2">不能同时合并行和列
+                <span style="color: aliceblue;">第一行第一列</span>
+
+            </td>
+            <td >
+<!-- 第一行第二列 -->2
+            </td>
+            <tr > 
+            <td>
+                <!-- 第二行第一列 -->3
+
+            </td>
+            <td align="right" valign="top">
+                  4
+            </td>
+        </tr>
+    </table>
+    <!-- 同理快捷键table>td*行数>tr*列数 -->
+    <h2>
+        然后就是table表格的相关属性
+        <p>
+            td标签的属性
+            width，height，
+            border边框，外边框线宽度
+            bordercolor边框颜色
+            bgcolor背景颜色
+            align="left或right或center" 水平对齐
+            cellspacing="单元格与单元格组件的间隙"
+            cellpadding="单元格与内容之间的间隙"
+        </p>
+        tr/td属性
+        height,width,bgcolor（本行内背景）,align="left或right或center"(文字水平对齐)
+        文字垂直对齐 valign="top或middle或bottom"
+    </h2>
+    <!-- 加给td -->
+    Colspan="要合并列数”
+    Rowspan="要合并行数”"
+    
+</body>
+</html>

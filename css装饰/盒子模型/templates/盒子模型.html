@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >疯狂的盒子</title>
+    <style>*{margin: 0;}
+        div{width: 500px;
+        height: 600px;
+        background: yellow;
+        background-position: center;
+        /* 让文本居中 */
+        text-align: justify;
+        /* 而设置单一方向则用padding-方向：大小如padding-right:40px */
+        /* 用*表示所有元素，则*{padding:0}为清除所有元素内边距 */
+        padding: 10px 20px;
+        /* 用border表示边框，10px定义大小，red定义颜色
+         solid/double/dashed/dotted定义实线/双实线/虚线/点状线，*/
+        border: 2px dotted red;
+         /* 用border-width让文本与盒子的内边距为30px .如果一个值默认为上下左右，两个值则是对应的上下，左右
+        如果三个值则是上，左右，下。四个值则是上，右，下，左的顺序来的*
+        (border-color/style也可以设置四个方向颜色/边框线样式)/
+         /* 而设置单一方向则用border-方向：大小如border-top:40px */
+         border-top: 20px dashed blue;
+         /* 那么按顺序来上一个的蓝色会被换上黄色 */
+         border-color: yellow rgb(218, 225, 30) rgb(20, 151, 142) green;
+        /* 用margin设置盒子与盒子的外边距 ,多个值按padding的来,负值则是往反方向*/
+        margin: 20px 20px;
+        /* 让盒子居中,也可以分左右上下*/
+        margin-top:  auto;}
+
+       .box1{
+        background: red;
+        margin-bottom: 100px;
+       }
+       .box2{
+        background: yellow;
+        margin-top: 50px;
+       }
+       .box3son{
+        float:left;
+        margin-right: 50px;
+        background-color: blue ;
+       }
+       .box4father{
+        float: right;
+        background-color: green;
+        margin-left: 200px;
+        margin-top: 10px;
+
+       }
+      
+    </style>
+</head>
+<body>
+    <div style="background-attachment: fixed;float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Itaque sunt, minima possimus, harum, dolores aliquam reiciendis 
+        similique dolor asperiores voluptates minus odio accusantium ullam reprehenderit.
+         Ipsum tempore facere totam aut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Itaque sunt, minima possimus, harum, dolores aliquam reiciendis 
+        similique dolor asperiores voluptates minus odio accusantium ullam reprehenderit.
+         Ipsum tempore facere totam aut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Itaque sunt, minima possimus, harum, dolores aliquam reiciendis 
+        similique dolor asperiores voluptates minus odio accusantium ullam reprehenderit.
+         Ipsum tempore facere totam aut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Itaque sunt, minima possimus, harum, dolores aliquam reiciendis 
+        similique dolor asperiores voluptates minus odio accusantium ullam reprehenderit.
+         Ipsum tempore facere totam aut?
+        </div>
+    <div style="color: aqua;background-color: blanchedalmond;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Itaque sunt, minima possimus, harum, dolores aliquam reiciendis 
+        similique dolor asperiores voluptates minus odio accusantium ullam reprehenderit.
+         Ipsum tempore facere totam aut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Itaque sunt, minima possimus, harum, dolores aliquam reiciendis 
+        similique dolor asperiores voluptates minus odio accusantium ullam reprehenderit.
+         Ipsum tempore facere totam aut?</div>
+         <p>hello</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+    <div class="box4father"><div class="box3son" >fff</div></div>
+  <!-- 定义子元素时父元素会出现塌陷的问题（一起走了），
+    此时要为父元素添加一个overflow:hidden来将二者分开 -->
+</body>
+</html>

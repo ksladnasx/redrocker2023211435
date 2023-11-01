@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新海浪网</title>
+    <style>
+        .nav{
+        height: 41px;
+        border-top: 3px solid #ff8500;
+        border-bottom: 1px solid #edeef0;
+        background-color: #fcfcfc;
+        /* 盒子行高 */
+        line-height: 41px;
+        }
+        .nav a{
+             font-size: 12px;
+            color: #4c4c4c;
+            /* 注意取消下划线 */
+            text-decoration: none;
+            /* a属于行内元素没有高要转换为行内块元素再设置 */
+            display: inline-block;
+            height: 41px;
+            /* 利用padding将每个内容长度不同的盒子设置为相同间距 */
+            padding: 0 20px;
+        }
+        /* 然后利用伪类选择器设置鼠标放在上面而不点击时显示的效果 */
+        .nav a:hover{background-color: #eee;
+            color: #ff8500 ;
+            border-color: aquamarine;
+            
+            /* 当然要用padding会影响盒子大小记得要减去，
+            除非是继承父系标签的高宽而本身没有标明高宽 */
+        }
+        p a{color: black;
+            background-color: greenyellow;
+            display: inline-block;
+            height: 20px;
+            width: 35px;
+            text-decoration: none;
+        border-radius: 10px;
+        /* text-align: center用于设置文字居中 */
+        text-align: center;
+        }
+          
+        
+        
+        p a:hover{color: #ff8500; background-color: #eee;}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="https://www.sina.com.cn/">新浪导航</a>
+        <a href="https://sina.cn/">手机新浪网</a>
+        <a href="https://ys.mihoyo.com/?utm_source=adbdpz&from_channel=adbdpz">移动客户端</a>
+        <a href="https://weibo.com/">微博</a>
+        <a href="https://www.toutiao.com/">头条事</a>
+        <a href="http://127.0.0.1:5500/html%E6%A1%86%E6%9E%B6/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E.html">百不了度</a>
+    </div>
+    <p>
+        
+        <input type="text" placeholder="请输入搜索关键词">
+        <a id="ass" href="https://ys.mihoyo.com/?utm_source=adbdpz&from_channel=adbdpz";>
+            搜索
+           </a>
+    </p>
+    
+</body>
+</html>

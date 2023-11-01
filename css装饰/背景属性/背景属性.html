@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazing</title>
+    <style>#box1{
+        height: 508px;
+        width: 500px;
+        background-color: red;
+        background-image: url( bibi.png) ;
+        background-repeat: no-repeat;
+        font-size:20px;
+        background-position: 100% 30%;
+        /* 图片大小也可以设置 
+        1.   200px 200px
+        2.60% 30%
+        3cover
+        4contain
+        */
+        background-size: cover
+        ;}
+        #box2{
+        height: 508px;
+        width: 400px;
+        background-color: aqua;
+        background-image: url( wx.png) ;
+        background-repeat: repeat-y;
+        background-position: 20px,20px;
+        /* 在离左上角20px，右上角20px的地方放置图片 
+        还可以用英文如right bottom(右下）*/ }
+        #ff{height: 700px;
+        font-weight: 900px;
+        background-image: url(rr.png);
+        background-position: center;
+        background-attachment: fixed;
+       }
+        #mm{height: 700px;
+        width: 900px;
+        background-image: url(rr.png);
+        background-attachment: scroll;
+        
+        }
+        #box3{
+            width: 600px;
+            height: 700px;
+            background: fixed url(qq.png) center red repeat-x;
+        background-size: contain;
+        }
+        </style>
+</head>
+<body>
+    <div id="mm">mm</div>
+    <p id="box1"><div id="box1">HTML5是Web中核心语言HTML的规范</div></p>
+    <div id="ff">ff</div>
+    <div id="box2"><strong>HTML5是构建Web内容的一种语言描述式。</strong></div>
+    <!-- background-attatchment :fixed（固定在浏览器的左上角）/scroll（随屏幕滚动） -->
+    <!-- 那么一个fixed一个scroll就会出现覆盖现象 ,视差效果非常amazing啊-->
+    <div id="box3">背景属性复合写法，但background-size 只能单独写</div>
+</body>
+</html>

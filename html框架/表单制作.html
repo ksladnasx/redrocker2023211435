@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>表单制作</h1></title>
+    <style>
+        fieldset {
+            width: 600px;
+            height: 700px;
+            margin: auto;
+        }
+        legend{
+            text-align: center
+        }
+        textarea{
+            resize: none;
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    
+    <!-- 以下是列可以打勾的表 -->
+    
+    <form action="https://www.baidu.com/index.htm"
+    method="post">
+    <!-- methd 定义后端接收方式 -->
+    <fieldset>
+        <legend>我只是试一试能不能打框</legend>
+        <input type="text" placeholder="这是提示输入什么东西" >姓名</input>
+        <input type="password" placeholder="这是可以隐藏输入的内容" 
+        name="mima">密码</input>
+        <input type="submit" value="提交按钮"
+         
+         ></form>
+        提交信息到action 指定的地址,name属性才能发送给服务器
+        <input type="reset" value="重置按钮"></input>
+        <input type="button" style="color: rgb(5, 169, 166);"
+          value="普通有色按钮" ></input>
+
+        <div>
+            <p><input type="checkbox" name="hobby"><span style="color: aqua;">篮球</span></p>
+            <p><input type="checkbox" name="hobby">音乐</p>
+            <p><input type="checkbox" name="hobby">游戏</p>
+            <p><input type="checkbox" name="hobby">积木</p>
+            <p><input type="checkbox" name="hobby">足球</p>
+            <p><input type="checkbox" name="hobby">排球</p>
+            <p><input type="checkbox" name="hobby">电影</p>
+            <p><input type="checkbox" name="hobby">园艺</p>
+            <p><input type="checkbox" name="hobby">原始人</p>
+            <p>
+                <select name="" id="999">
+                    <option value="">请选择出生日期</option>
+                    <option  style="color: blue;" value="">2001年</option>
+                    <option  style="color: blue;" value="">2002年</option>
+                    <option  style="color: blue;" value="">2003年</option>
+                    <option  style="color: blue;" value="">2004年</option>
+                    <option  style="color: blue;" value="">2005年</option>
+                    <option  style="color: blue;" value="">2006年</option>
+                </select>
+            </p>
+            <input type="radio" name="sex" id="man"><label for="man">男
+</label>
+            
+                <input type="radio" name="sex" id="woman"><label for="woman">女
+    </label>
+                <input type="radio" name="sex" id="woman"><label for="woman">不男不女
+    </label>
+            
+            <p>
+            <input type="radio" name="marry" id="yihun">已婚
+            <input type="radio" name="marry" id="yihun">未婚
+        </p>
+        </fieldset>
+    </form>
+   </body>
+    
+</html> 

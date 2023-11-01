@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/外部样式.css">
+    <!-- 利用link标签来连接html与css文件以让css定义html标签的属性 -->
+</head>
+<body>
+    <div id="bab"> #必须给每个相同的标签单独写id 
+     class命名法将一类同class名的标签加属性，用".class名”来在css中引入标签属性
+        <h1 class="hh">hhhh汪汪汪</h1> 
+         <p class="hh">我是重复的class类</p>
+        id命名法将一个特定id名的标签加属性，用"#id名”来在css中引入标签属性
+        <h2 id="aba">我是特别的id命名</h2>
+
+    </div>
+    <!-- 属性是同一个标签是同一个，标签样式遵循就近原则，
+        行内样式>内部样式>外部样式，
+        但如果注明！important的样式会被调为最优先级 -->
+        <div id="aaa">
+            <h2>我是一个有颜色的盒子</h2>
+            <p>群组标签向div,.hh,#bab{属性}
+                <!-- 而p b {属性} 表示定义p标签下的b标签属性（后代选择器） -->
+            </p></div>
+        </div>
+        
+</body>
+
+</html>

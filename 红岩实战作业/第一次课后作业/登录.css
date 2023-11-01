@@ -1,0 +1,165 @@
+
+*{
+margin: 0;
+padding: 0;
+border-radius: 2%;
+}
+#rr{
+position:absolute;
+left: 519px;
+top: 0px;
+border-top: 0;
+}
+.box1{
+text-align: center;
+display: block;
+padding: auto;
+}
+.box2{
+text-align: center;
+display: block;
+padding: auto;
+}
+/* 一定要注意是定义输入框即input的属性而不是去设置外部的lable标签 */
+/* 当然如果要文本框居中的话可以用lable标签中的text-align来定义 */
+#ipt {
+width: 274px;height: 50px;
+font-size: 30px ;
+position: absolute;
+left: 779px;
+top: 328px;
+    
+}
+ input:hover{
+background-color: rgb(185, 236, 236);
+border-radius: 5%;
+}
+ /* 如果定义输入框的text-align则会产生输入位置在输入框中间的效果 */
+#password {
+    width: 300px;
+    height: 500px;
+    font-size: 30px ;
+}
+#imgg{
+    width: 50px;
+    height: 64px;
+    position:absolute;
+left: 650px;
+top: 330px;
+
+}
+#set{
+display: block;
+font-size: 25px;
+height: 54px;
+position: absolute;
+left: 701px;
+top: 330px;
+}
+#imga{
+position: absolute;
+left: 645px;
+top: 380px;
+height: 54px;
+width: 50px;
+}
+h1{
+font-size: 30px;
+position: absolute;
+top: 270px;
+left: 812px;
+}
+#jzmm{
+position: absolute;
+left: 650px;
+top: 454px;
+font-size: 20px;
+color: red;
+
+} 
+#jzm{
+    width: 20px;
+    height: 15px;
+    border-color: red;
+}
+#a1{color: rgb(16, 152, 193);
+position: absolute;
+left: 862px;
+top: 455px;
+font-size: 20px;
+text-decoration: none;
+
+
+}
+#a2{color: rgb(16, 152, 193);
+position: absolute;
+left: 962px;
+top: 455px;
+font-size: 20px;
+text-decoration: none;
+}
+
+
+a:hover{background-color: darkgray;}
+#rejest{background-color: red;
+color: aliceblue;
+text-align: center;
+font-size: 35px;
+width: 420px;
+height: 45px;
+position: absolute;
+left: 650px;
+top: 540px;
+}
+#zc{
+font-size: 30px;
+color: black;
+position: absolute;
+left: 826px;
+top: 594px;     
+}
+#hhh{
+position: absolute;
+left: 532px;
+top: 670px;
+}
+#ty{
+ 
+    font-size: 15px;
+ position: absolute;
+ left: 632px;
+ top: 770px;
+}
+#tyy{
+    width: 50px;
+ height: 50px;
+ /* inputcheckb下的p标签定义的是
+ 文字相对于勾选框的位移，（勾选框是0，0） */
+ position: absolute;
+ left: 14px;
+ top: 0px;
+
+
+}
+#aa{
+font-size: 15px;
+position: absolute;
+left: 680px;
+top: 770px;
+
+}
+#a3{
+text-decoration: none;
+color: rgb(16, 152, 193);
+}
+#a4{
+text-decoration: none;
+color: rgb(16, 152, 193);
+}
+#a5{
+text-decoration: none;
+color: rgb(16, 152, 193);
+}
+
+
+

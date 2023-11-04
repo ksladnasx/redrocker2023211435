@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        }
+        div{
+            /* 给父元素加flex属性 */
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: red;
+            /* 默认的（row)排列的主轴是X轴，Y是侧轴 */
+            /* 元素沿着主轴排列 */
+            /* 再row是翻转 */
+            /* 可以用column把主轴设置为Y轴 */
+            /* 子元素居中 */
+            justify-content: center;
+            /* 平分剩余空间 */
+            /* justify-content: space-around; */
+            /*贴边平分 */
+           
+            align-content: space-between;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+
+        }
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: aqua;
+            margin:  1px  ;
+            padding: 2px ;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+    
+</body>
+</html>

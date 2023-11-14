@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九九乘法表</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 100px;
+            margin: 2px;
+            padding: 5px 10px;
+            box-shadow: 1px 1px 1px plum;
+            border: 0.5px solid pink;
+            border-radius: 5px;
+            background-color: rgba(255, 192, 203, .1);
+            color: red;
+        }
+        span:hover{
+            background-color: aqua;
+            box-shadow: 2px 2px 2px  #878686;
+        }
+    </style>
+</head>
+<body>
+    <!-- ?\for(变量初始值;循环运行条件;每次循环执行语句) -->
+    <script> 
+        for(let i = 1;i <= 9;i ++){
+            for(let j = 1;j <= i;j ++){
+                document.write(`<span>${i}x${j}=${i * j}</span>`)
+            }
+            // 换行
+            document.write(`<br>`)
+        }
+    </script>
+</body>
+</html>

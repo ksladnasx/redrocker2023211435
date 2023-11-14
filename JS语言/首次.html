@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsの初体验</title>
+    <script>
+        alert('我是语言，我也是弹窗1')
+        // print('啊js里面也有print啊')，原来真的是打印
+        // 声明变量用var（可以后面直接用=打值）
+        // 让用户输入内容的框
+        let age = prompt('你多少岁了？');
+        let name = prompt('你是什么名字');
+        
+        // 展示输出的解释框
+        alert(`你的年龄是${age}岁`);
+        // 这是控制台输出，给程序员看的
+        console.log('用户看到的我吗？');
+        document.write(`你的名字是${name},对吧` )
+        let a = true 
+        document.write<br>
+        document.write(a)
+        console.log(2+'www')
+        
+
+    </script>
+    <style>
+        
+        *{
+    margin: 0%;
+    border: 0;
+}
+@keyframes move {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(1000px,0px);
+    }
+    50%{
+        transform: translate(1000px,600px);
+    }
+    75%{
+        transform: translate(0,600px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    /* 引用的动画名称 */
+    animation-name: move;
+    /* 持续时间 */
+    animation-duration: 10s;
+    /* 重复次数   iteration:重复的 infinite：无限 */
+    animation-iteration-count: infinite;
+    /* 打开页面后的开始时间 */
+    animation-delay: 1s;
+    /* 是否反方向播放，默认是normal，如果想反方向就alternate */
+    /* animation-direction: alternate; */
+    /* 动画结束后的状态，默认是backward,回到起始状态，或者我们可以用 forwards让他停留在结束状态 */
+    /* animation-fill-mode: forwards; */
+    /* 以下定义运动方式，linear是匀速ease是先快后慢 */
+    animation-timing-function: ease;
+    /* 以下是两个之间的延迟 */
+
+    /* 简化按以下格式 */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+div:hover{
+    /* 这个控制动画的开始与停止 */
+    animation-play-state: paused;
+}input{
+        width: 500px;
+        height: 300px;
+        color: red;
+        box-shadow:-15px 10px 10px -4px #b0b0b0 ;
+        font-size: 130px;
+        position: absolute;
+        left: 650px;
+    }
+    </style>
+        
+        
+    
+</head>
+<!-- JS与css一样也分行内与行为与内嵌的三种写法 -->
+<body>
+    <div><input type="button" name="ff" value="唐伯虎" onclick="alert('点了也不会有秋香')" ></div>
+    
+</body>
+</html>

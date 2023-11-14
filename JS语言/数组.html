@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组（Array）是一组按顺序保存的变量</title>
+    
+</head>
+<body>
+    <!-- 以下格式声明数组 -->
+    <script>
+        // 字符串必须以''声明，不然会被认定是变量
+        let arr = [1,2,3,'ss',5,222]
+        // 顺序(编号）是0，1，2......
+        // 通过数组名[下标编号]来获取其中的一个元素
+        let sum = arr[0] + arr[1] 
+        document.write(arr[0])
+        alert(arr.length)
+    //    以下表示在数组中添加数，是自动按顺序添加到末尾
+        arr.push(66,666)
+    //    以下表示在数组中添加数，是自动按顺序添加到开头
+        arr.unshift('哈哈','houhou')
+    // 修改，就直接点明再改
+        arr[4]= 333;
+        
+        document.write(arr+'长度是：'+arr.length)
+        // 声明新的数组
+        let arre =[1,4,2,6,3,77,334,63,2234,62,62,3,3]
+        let newArr = []
+        // 再用for循环遍历数组，以筛选
+        for(let i = 0;i<arre.lengthl;i++);
+        if(arre[i]>=5){
+            newArr.push(arre[i])
+        }
+        document.write(newArr);
+    </script>   
+</body>
+</html>

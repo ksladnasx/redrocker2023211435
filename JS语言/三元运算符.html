@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三元运算符</title>
+    <style>
+        span{
+            display: inline-block;
+            background-color: aquamarine;
+            height: 5px;
+            width: 5px;
+            border-radius: 1px;
+            border: 0.3px solid red;
+        }
+        span:hover{
+            box-shadow: 1px 1px 1px;
+        }
+    </style>
+    <script>
+        let a = +prompt('请输入a的值')
+        let b = +prompt('请输入b的值')
+        // 三元运算符的一般格式为：条件？代码1：代码2。
+        // （如果条件满足就执行1，否则2）
+        a>b?alert('a是大于b的'):alert('a是小于等于b的')
+        // 那么就可以如此这般
+        a>b?alert('运行成功'):alert('运行失败')
+        
+        let f = +prompt('请输入一个数')
+        let sum = 0
+        if(a>b?true:false)
+        for(let i=1;i<=f ;i++){
+            sum = sum + i 
+            document.write('加载中')
+            
+             for( j = 1;j <= i;j++ ){
+                
+                    document.write('<span>.</span>')
+                
+                }
+          document.write('<br>')
+        
+    }
+        document.write(`运算成功！从1到${f}的和是${sum}。`)    
+       
+        
+        
+
+
+             
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

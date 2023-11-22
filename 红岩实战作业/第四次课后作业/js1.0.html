@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建对象的三种方式
+        // 字面量方式
+        const obj1 = {
+            name: 'john',
+            age :30 ,
+              }
+            //   利用object（）构造函数
+        let obj = new Object();
+        obj.name = '王涵2023211435';
+        obj.age = '18';
+        console.log(obj);
+        document.write(obj.name,obj.age)
+        // 使用构造函数的方式
+        function Person(name2,age2){
+            this.name2 = 'name2' ;
+            this.age2 = 'age2';
+        
+}
+const johndivi = new Person('john',30)
+// object.creat()方式
+const persons = {
+    sayName:function(){
+        console.log(this.name);
+    }
+}
+const johndoe = Object.create(persons)
+johndoe.name = 'john DOe'
+johndoe.age = 33
+johndoe.job = 'worker'
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1 = new Object();
+        let obj2 = obj1;
+        obj1.name = 'jjj';
+        // 虽然定义的是obj1.name，但obj2.name也随着改变，这是因为复制了obj1的值给obj2的时候，两者
+        console.log(obj2.name)
+        document.write(obj2.name)
+        document.write('<br></br>')
+        document.write('')
+        let arr = [1,2,3,'s',obj2.name]
+        document.write(arr)
+        console.log(arr.length)
+
+    </script>
+</body>
+</html>
